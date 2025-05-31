@@ -41,7 +41,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0        &bt BT_SEL 1         &bt BT_SEL 2          &bt BT_SEL 3              &bt BT_SEL 4                                         &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG     &trans                      &trans     &trans
 &trans      &kp F1              &kp F2               &kp F3                &kp F4                    &kp F5                                               &kp F6           &kp F7            &kp F8                &kp F9                      &kp F10    &kp F11
-&trans      &kp SINGLE_QUOTE    &kp RS(SINGLE_QUOTE) &kp RA(RIGHT_BRACKET) &kp GRAVE                 &kp EQUAL                                            &trans           &kp HOME          &kp PAGE_DOWN         &kp PAGE_UP                 &kp END    &kp F12
+&trans      &kp BSLH            &kp RS(BSLH)         &kp RA(RIGHT_BRACKET) &kp GRAVE                 &kp EQUAL                                            &trans           &kp HOME          &kp PAGE_DOWN         &kp PAGE_UP                 &kp END    &kp F12
 &trans      &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH)  &trans       &kp RS(NUMBER_8)    &kp RS(NUMBER_9)    &trans           &trans            &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)    &trans     &trans
                                                      &trans                &trans                    &trans       &trans              &trans              &trans           &trans            &trans
             >;
@@ -57,9 +57,9 @@
 // |       |     |     |  ^   | "|"  |      | "[" |  | "]" |     |       |  "<"  | ">"  |       |       |
 //                     |      |      |      |     |  |     |     |       |       |
             bindings = <
-&trans      &trans              &kp AT               &trans                &kp DOLLAR               &trans                                              &trans      &trans      &trans                  &trans                      &trans      &kp BSLH
+&trans      &trans              &kp &kp RA(NUMBER_2) &trans                &kp RA(NUMBER_4)         &trans                                              &trans      &trans      &trans                  &trans                      &trans      &kp RA(EQUAL)
 &trans      &kp F1              &kp F2               &kp F3                &kp F4                   &kp F5                                              &kp F6      &kp F7      &kp F8                  &kp F9                      &kp F10     &kp F11
-&trans      &kp SINGLE_QUOTE    &kp RS(SINGLE_QUOTE) &kp RA(RIGHT_BRACKET) &kp GRAVE                &kp EQUAL                                           &trans      &kp LEFT    &kp DOWN                &kp UP                      &kp RIGHT   &kp F12
+&trans      &kp BSLH            &kp RS(BSLH)         &kp RA(RIGHT_BRACKET) &kp GRAVE                &kp EQUAL                                           &trans      &kp LEFT    &kp DOWN                &kp UP                      &kp RIGHT   &kp F12
 &trans      &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH) &trans      &kp RA(NUMBER_8)    &kp RA(NUMBER_9)    &trans      &trans      &kp NON_US_BACKSLASH    &kp RS(NON_US_BACKSLASH)    &trans      &trans
                                                      &trans                &trans                   &trans      &trans              &trans              &trans      &trans      &trans
             >;
