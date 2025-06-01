@@ -20,36 +20,35 @@ Switches: Akko penguin
 ----- Menu = Lower -----
 J - home
 K - pgdown
-L - pgup
-F3 - end
+I - pgup
+L - end
 {} - ()
-Esc - btclr
-12345 - bt(1,2,3,4,5)
-678  - ext_power(EP_ON,EP_OFF,EP_TOG)
 
 ----- Func = Raise -----
 J - left
 K - down
-L - up
-F3 - right
+I - up
+L - right
 {} - []
 
-=+ - \
-4 - $
-2 - @
-
 ----- Both layers -----
-Under 1-0 - F1-F10.
-F1 - F11
-F2 - F12
-<> syns
-A - Appostrof
-S - Star
-D - tilDe (or Destructor)
-F - paragraF
-G - Grave (Normal accent, och layer+shift+G is grave accent).
-C - Caret
-V - Vertical bar
+Esc  - BTCLR
+Tab  - BT1
+Q    - BT2
+1-0  - F1-F10.
++    - F11
+F1   - F12
+<>   - ,.
+T    - ~ (Tilde)
+A    - * (Asterisk)
+S    - @ (Snabela)
+D    - $ (Dollar)
+F    - ' (appostroF)
+G    - ´ (Grave (Normal accent, and layer+shift+G is grave accent).)
+C    - ^ (Caret)
+V    - | (Vertical bar)
+B    - \ (Backslash)
+P    - § (Paragraf)
 
 
 
