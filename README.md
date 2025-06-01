@@ -5,11 +5,19 @@ https://zmk.dev/docs/keymaps/list-of-keycodes
 https://github.com/erik-brusewitz/zmk-config/actions
 https://www.keyboardtester.com/tester.html
 
+
+----- Keyboard components -----
+Case: Manta58s + short tenting legs
+Screen: nice!view 
+Microcontroller: nice nano v2 
+PCB: aurora lily58 v2
+Switches: Akko penguin
+
+
+
 ----- Layered bindings -----
 
-
-
-Menu = Lower:
+----- Menu = Lower -----
 J - home
 K - pgdown
 L - pgup
@@ -19,7 +27,7 @@ Esc - btclr
 12345 - bt(1,2,3,4,5)
 678  - ext_power(EP_ON,EP_OFF,EP_TOG)
 
-Func = Raise:
+----- Func = Raise -----
 J - left
 K - down
 L - up
@@ -30,7 +38,7 @@ F3 - right
 4 - $
 2 - @
 
-Both layers:
+----- Both layers -----
 Under 1-0 - F1-F10.
 F1 - F11
 F2 - F12
@@ -49,3 +57,8 @@ V - Vertical bar
 dollar, euro, pund, mu, 1/2
 volume, mute, monitor brightness
 insert, special quote (¨¨)
+
+
+----- Todo -----
+* Win+Menu+Arrow keys does not work. But menu+shift works for some reason even though i did not bind it. Maybe just bind menu+F to be lgui+left or something.
+* Maybe switch ctrl and shift.
