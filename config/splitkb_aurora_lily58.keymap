@@ -34,13 +34,13 @@
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
-// |  BT1  | BT2 |     |      |  ~   |      |                   |      |       |  PGUP |      |   §   |  F12  |
+// |  BT1  | BT2 |     |      |      |  ~   |                   |      |       |  PGUP |      |   §   |  F12  |
 // |       |  *  |  @  |  $   |  '   |  `   |                   |      |  HOME | PGDWN | END  |       |       |
 // |       |     |     |  ^   | "|"  |  \   |   (    |  |   )   |      |       |  "<"  | ">"  |       |       |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &bt BT_CLR    &kp F1              &kp F2               &kp F3                &kp F4                    &kp F5                                                &kp F6           &kp F7            &kp F8                &kp F9                      &kp F10    &kp F11
-&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &kp RA(RIGHT_BRACKET)     &trans                                                &trans           &trans            &kp PAGE_UP           &trans                      &kp GRAVE  &kp F12
+&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &trans                    &kp RA(RIGHT_BRACKET)                                 &trans           &trans            &kp PAGE_UP           &trans                      &kp GRAVE  &kp F12
 &trans        &kp RS(BSLH)        &kp RA(NUMBER_2)     &kp RA(NUMBER_4)      &kp BSLH                  &kp EQUAL                                             &trans           &kp HOME          &kp PAGE_DOWN         &kp END                     &trans     &trans
 &trans        &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS) &kp RS(NUMBER_8)    &kp RS(NUMBER_9)    &trans           &trans            &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)    &trans     &trans
                                                        &trans                &trans                    &trans        &trans              &trans              &trans           &trans            &trans
@@ -52,13 +52,13 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR |  F1 |  F2 |  F3  |  F4  |  F5  |              | F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
-// | BT1   | BT2 |     |      |  ~   |      |              |     |       |   ^   |      |   §   |  F12  |
+// | BT1   | BT2 |     |      |      |  ~   |              |     |       |   ^   |      |   §   |  F12  |
 // |       |  *  |  @  |  $   |   '  |  `   |              |     |   <-  |   v   |  ->  |       |       |
 // |       |     |     |  ^   | "|"  |  \   | "[" |  | "]" |     |       |  "<"  | ">"  |       |       |
 //                     |      |      |      |     |  |     |     |       |       |
             bindings = <
 &bt BT_CLR    &kp F1              &kp F2               &kp F3                &kp F4                   &kp F5                                                &kp F6      &kp F7      &kp F8                  &kp F9                      &kp F10     &kp F11
-&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &kp RA(RIGHT_BRACKET)    &trans                                                &trans      &trans      &kp UP                  &trans                      &kp GRAVE   &kp F12
+&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &trans                   &kp RA(RIGHT_BRACKET)                                 &trans      &trans      &kp UP                  &trans                      &kp GRAVE   &kp F12
 &trans        &kp RS(BSLH)        &kp RA(NUMBER_2)     &kp RA(NUMBER_4)      &kp BSLH                 &kp EQUAL                                             &trans      &kp LEFT    &kp DOWN                &kp RIGHT                   &trans      &trans
 &trans        &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH) &kp RA(MINUS) &kp RA(NUMBER_8)    &kp RA(NUMBER_9)    &trans      &trans      &kp NON_US_BACKSLASH    &kp RS(NON_US_BACKSLASH)    &trans      &trans
                                                        &trans                &trans                   &trans        &trans              &trans              &trans      &trans      &trans
