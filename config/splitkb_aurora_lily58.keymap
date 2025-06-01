@@ -33,17 +33,17 @@
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |  idk |  idk  | idk   |      |       |       |
-// |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
-// |       |  '  |  *  |  ~   |  §   |  `   |                   |      |  HOME | PGDWN | PGUP | END   |  F12  |
-// |       |     |     |  ^   | "|"  |      |   (    |  |   )   |      |       |  "<"  | ">"  |       |       |
+// | BTCLR |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
+// |  BT1  | BT2 |     |      |  ~   |      |                   |      |       |  PGUP |      |   §   |  F12  |
+// |       |  *  |  @  |  $   |  '   |  `   |                   |      |  HOME | PGDWN | END  |       |       |
+// |       |     |     |  ^   | "|"  |  \   |   (    |  |   )   |      |       |  "<"  | ">"  |       |       |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0        &bt BT_SEL 1         &bt BT_SEL 2          &bt BT_SEL 3              &bt BT_SEL 4                                         &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG     &trans                      &trans     &trans
-&trans      &kp F1              &kp F2               &kp F3                &kp F4                    &kp F5                                               &kp F6           &kp F7            &kp F8                &kp F9                      &kp F10    &kp F11
-&trans      &kp BSLH            &kp RS(BSLH)         &kp RA(RIGHT_BRACKET) &kp GRAVE                 &kp EQUAL                                            &trans           &kp HOME          &kp PAGE_DOWN         &kp PAGE_UP                 &kp END    &kp F12
-&trans      &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH)  &trans       &kp RS(NUMBER_8)    &kp RS(NUMBER_9)    &trans           &trans            &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)    &trans     &trans
-                                                     &trans                &trans                    &trans       &trans              &trans              &trans           &trans            &trans
+&bt BT_CLR    &kp F1              &kp F2               &kp F3                &kp F4                    &kp F5                                                &kp F6           &kp F7            &kp F8                &kp F9                      &kp F10    &kp F11
+&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &kp RA(RIGHT_BRACKET)     &trans                                                &trans           &trans            &kp PAGE_UP           &trans                      &kp GRAVE  &kp F12
+&trans        &kp RS(BSLH)        &kp RA(NUMBER_2)     &kp RA(NUMBER_4)      &kp BSLH                  &kp EQUAL                                             &trans           &kp HOME          &kp PAGE_DOWN         &kp END                     &trans     &trans
+&trans        &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS) &kp RS(NUMBER_8)    &kp RS(NUMBER_9)    &trans           &trans            &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)    &trans     &trans
+                                                       &trans                &trans                    &trans        &trans              &trans              &trans           &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -51,17 +51,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |  @  |      |  $   |      |              |     |       |       |      |       |   \   |
-// |       |  F1 |  F2 |  F3  |  F4  |  F5  |              | F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
-// |       |  '  |  *  |  ~   |  §   |  `   |              |     |   <-  |   v   |  ^   |  ->   |  F12  |
-// |       |     |     |  ^   | "|"  |      | "[" |  | "]" |     |       |  "<"  | ">"  |       |       |
+// | BTCLR |  F1 |  F2 |  F3  |  F4  |  F5  |              | F6  |   F7  |  F8   |  F9  |  F10  |  F11  |
+// | BT1 | BT2   |     |      |  ~   |      |              |     |       |   ^   |      |   §   |  F12  |
+// |       |  *  |  @  |  $   |   '  |  `   |              |     |   <-  |   v   |  ->  |       |       |
+// |       |     |     |  ^   | "|"  |  \   | "[" |  | "]" |     |       |  "<"  | ">"  |       |       |
 //                     |      |      |      |     |  |     |     |       |       |
             bindings = <
-&trans      &trans              &kp RA(NUMBER_2)     &trans                &kp RA(NUMBER_4)         &trans                                              &trans      &trans      &trans                  &trans                      &trans      &kp RA(MINUS)
-&trans      &kp F1              &kp F2               &kp F3                &kp F4                   &kp F5                                              &kp F6      &kp F7      &kp F8                  &kp F9                      &kp F10     &kp F11
-&trans      &kp BSLH            &kp RS(BSLH)         &kp RA(RIGHT_BRACKET) &kp GRAVE                &kp EQUAL                                           &trans      &kp LEFT    &kp DOWN                &kp UP                      &kp RIGHT   &kp F12
-&trans      &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH) &trans      &kp RA(NUMBER_8)    &kp RA(NUMBER_9)    &trans      &trans      &kp NON_US_BACKSLASH    &kp RS(NON_US_BACKSLASH)    &trans      &trans
-                                                     &trans                &trans                   &trans      &trans              &trans              &trans      &trans      &trans
+&bt BT_CLR    kp F1               &kp F2               &kp F3                &kp F4                   &kp F5                                                &kp F6      &kp F7      &kp F8                  &kp F9                      &kp F10     &kp F11
+&bt BT_SEL 0  &bt BT_SEL 1        &trans               &trans                &kp RA(RIGHT_BRACKET)    &trans                                                &trans      &trans      &kp UP                  &trans                      &kp GRAVE   &kp F12
+&trans        &kp RS(BSLH)        &kp RA(NUMBER_2)     &kp RA(NUMBER_4)      &kp BSLH                 &kp EQUAL                                             &trans      &kp LEFT    &kp DOWN                &kp RIGHT                   &trans      &trans
+&trans        &trans              &trans               &kp RS(RIGHT_BRACKET) &kp RA(NON_US_BACKSLASH) &kp RA(MINUS) &kp RA(NUMBER_8)    &kp RA(NUMBER_9)    &trans      &trans      &kp NON_US_BACKSLASH    &kp RS(NON_US_BACKSLASH)    &trans      &trans
+                                                       &trans                &trans                   &trans        &trans              &trans              &trans      &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

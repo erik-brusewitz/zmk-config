@@ -54,11 +54,11 @@ V - Vertical bar
 
 
 ----- Missing bindings -----
-dollar, euro, pund, mu, 1/2
+euro, pund, mu, 1/2
 volume, mute, monitor brightness
 insert, special quote (¨¨)
 
 
 ----- Todo -----
-* Win+Menu+Arrow keys does not work. But menu+shift works for some reason even though i did not bind it. Maybe just bind menu+F to be lgui+left or something.
-* Maybe switch ctrl and shift.
+* Maybe switch ctrl and shift. But maybe not, it works pretty good.
+* Maybe bind keys to move windows.
